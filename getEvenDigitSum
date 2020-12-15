@@ -1,0 +1,21 @@
+public class getEvenDigitSum {
+
+    public static int EvenDigitSum(int number) {
+        String holder = String.valueOf(number);
+        int total = 0;
+        int temp = 0;
+
+        if (number >=0) {
+            for (int i = 0; i < holder.length(); i++) {
+                temp = Integer.parseInt(holder.substring(i, i+1));
+            if (temp%2 == 0){
+                total = temp+total;
+            }
+
+            }
+        }
+        else {total = -1;}
+        return total;
+
+    }
+}
